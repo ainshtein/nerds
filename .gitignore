@@ -1,0 +1,12 @@
+node_modules/
+bower_components/
+psd/
+src/
+*.json
+*.js
+.idea
+*.sublime*
+*.log
+*.psd
+*.ai
+*.pdf
