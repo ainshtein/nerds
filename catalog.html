@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>NЁRDS DESIGN STUDIO - МАГАЗИН</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1200">
+  <meta name="keywords" content="разные, ключевые, слова">
+  <meta name="description" content="краткое описание сайта">
+  <meta name="author" content="ainshtein">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<!--[if lt IE 9]>
+<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите</a>
+<![endif]-->
+  <div class="wrapper">
+    <header class="header-main">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img class="logo__pic-img" src="img/logo.png" width="" height="" alt="Логотип">
+        </a>
+        <nav class="navigation-main">
+          <ul class="navigation-main__list">
+            <li class="navigation-main__item">
+              <a class="navigation-main__link" href="#">Студия</a>
+            </li>
+            <li class="navigation-main__item">
+              <a class="navigation-main__link" href="#">Клиенты</a>
+            </li>
+            <li class="navigation-main__item">
+              <a class="navigation-main__link navigation-main__link_active">Магазин</a> 
+            </li>
+            <li class="navigation-main__item">
+              <a class="navigation-main__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="user-block__link" href="#">Корзина</a>
+        </div>
+        <h1>Добро пожаловать в магазин готовых макетов</h1>
+      </div>
+    </header>
+    <main class="container">
+      <aside class="searching-filter">
+        <form class="searching-filter__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="searching-filter-slider">
+            <legend class="searching-filter__title">Стоимость</legend>
+            <div class="range-controls">
+              <div class="range-controls__scale">
+                <div class="range-controls__bar"></div>
+              </div>
+              <div class="range-controls__toggle range-controls__toggle_min"></div>
+              <div class="range-controls__toggle range-controls__toggle_max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="price-controls__label" for="price-min-field">от</label>
+              <input class="price-controls__input" type="text" name="price-min" id="price-min-field" value="0" maxlength="9">
+              <label class="price-controls__label" for="price-max-field" >до</label>
+              <input class="price-controls__input" type="text" name="price-max" id="price-max-field" value="15 000" maxlength="9">
+            </div>
+          </fieldset>
+          <fieldset class="searching-filter-group">
+            <legend class="searching-filter__title">Сетка:</legend>
+            <input class="searching-filter__radio" type="radio" name="grid" id="grid-adaptive-field" value="grid-adaptive" checked>
+            <label class="searching-filter__label" for="grid-adaptive-field">Адаптивная</label>
+            <input class="searching-filter__radio" type="radio" name="grid" id="grid-fix-field" value="grid-fix">
+            <label class="searching-filter__label" for="grid-fix-field">Фиксированная</label>
+            <input class="searching-filter__radio" type="text" name="grid" id="grid-gum-field" value="grid-gum">
+            <label class="searching-filter__label" for="grid-gum-field">Резиновая</label>
+          </fieldset>
+          <fieldset class="searching-filter-group">
+            <legend class="searching-filter__title">Особенности:</legend>
+            <input class="searching-filter__checkbox" type="checkbox" name="slider" id="slider-field" checked>
+            <label class="searching-filter__label" for="slider-field">Слайдер</label>
+            <input class="searching-filter__checkbox" type="checkbox" name="advantages" id="advantages-field">
+            <label class="searching-filter__label" for="advantages-field">Блок преимуществ</label>
+            <input class="searching-filter__checkbox" type="checkbox" name="news" id="news-field" checked>
+            <label class="searching-filter__label" for="news-field">Новости</label>
+            <input class="searching-filter__checkbox" type="checkbox" name="galery" id="galery-field" checked>
+            <label class="searching-filter__label" for="galery-field">Галерея</label>
+            <input class="searching-filter__checkbox" type="checkbox" name="busket" id="busket-field" checked>
+            <label class="searching-filter__label" for="busket-field">Корзина</label>
+          </fieldset>
+          <button class="btn btn_submit" type="submit">Показать</button>
+        </form>
+      </aside>
+      <section class="searching-results">
+        <span class="searching-results__title">Сортировать</span>
+        <a class="searching-results__link" href="#">По цене</a>
+        <a class="searching-results__link" href="#">По типу</a>
+        <a class="searching-results__link" href="#">По функционалу</a>
+        <div class="sort-controls">
+          <a class="sort-controls__link sort-controls__link_active" href="#">по убыванию</a>
+          <a class="sort-controls__link" href="#">по возрастанию</a>
+        </div>
+      </section>
+      <section class="gallery">
+        <a class="gallery__link" href="#">
+          <article class="site-card">
+            <div class="site-card__top">
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+            </div>
+            <div class="site-card__pic">
+              <img class="site-card__pic-img" src="gl-aviator.png" width="" height="" alt="Aviator">
+            </div>
+            <div class="site-card-active">
+              <h2 class="site-card-active__title">Sunset</h2>
+              <p class="site-card-active__text">
+                Интернет-магазин с личным кабинетом
+              </p>
+              <a class="btn btn_site-card-active" href="#">10000 р.</a>   
+            </div>
+          </article>
+        </a>
+        <a class="gallery__link" href="#">
+          <article class="site-card">
+            <div class="site-card__top">
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+            </div>
+            <div class="site-card__pic">
+              <img class="site-card__pic-img" src="gl-sunset.png" width="" height="" alt="Sunset">
+            </div>
+            <div class="site-card-active">
+              <h2 class="site-card-active__title">Sunset</h2>
+              <p class="site-card-active__text">
+                Интернет-магазин с личным кабинетом
+              </p>
+              <a class="btn btn_site-card-active" href="#">10000 р.</a>   
+            </div>
+          </article>
+        </a>
+        <a class="gallery__link" href="#">
+          <article class="site-card">
+            <div class="site-card__top">
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+            </div>
+            <div class="site-card__pic">
+              <img class="site-card__pic-img" src="gl-forte.png" width="" height="" alt="Forte">
+            </div>
+            <div class="site-card-active">
+              <h2 class="site-card-active__title">Sunset</h2>
+              <p class="site-card-active__text">
+                Интернет-магазин с личным кабинетом
+              </p>
+              <a class="btn btn_site-card-active" href="#">10000 р.</a>   
+            </div>
+          </article>
+        </a>
+        <a class="gallery__link" href="#">
+          <article class="site-card">
+            <div class="site-card__top">
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+            </div>
+            <div class="site-card__pic">
+              <img class="site-card__pic-img" src="gl-marquee.png" width="" height="" alt="Marquee">
+            </div>
+            <div class="site-card-active">
+              <h2 class="site-card-active__title">Sunset</h2>
+              <p class="site-card-active__text">
+                Интернет-магазин с личным кабинетом
+              </p>
+              <a class="btn btn_site-card-active" href="#">10000 р.</a>   
+            </div>
+          </article>
+        </a>
+        <a class="gallery__link" href="#">
+          <article class="site-card">
+            <div class="site-card__top">
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+            </div>
+            <div class="site-card__pic">
+              <img class="site-card__pic-img" src="gl-avenue.png" width="" height="" alt="Avenue">
+            </div>
+            <div class="site-card-active">
+              <h2 class="site-card-active__title">Sunset</h2>
+              <p class="site-card-active__text">
+                Интернет-магазин с личным кабинетом
+              </p>
+              <a class="btn btn_site-card-active" href="#">10000 р.</a>   
+            </div>
+          </article>
+        </a>
+        <a class="gallery__link" href="#">
+          <article class="site-card">
+            <div class="site-card__top">
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+            </div>
+            <div class="site-card__pic">
+              <img class="site-card__pic-img" src="gl-dovetail.png" width="" height="" alt="Dovetail">
+            </div>
+            <div class="site-card-active">
+              <h2 class="site-card-active__title">Sunset</h2>
+              <p class="site-card-active__text">
+                Интернет-магазин с личным кабинетом
+              </p>
+              <a class="btn btn_site-card-active" href="#">10000 р.</a>   
+            </div>
+          </article>
+        </a>
+        <a class="gallery__link" href="#">
+          <article class="site-card">
+            <div class="site-card__top">
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+              <span class="site-card__controls"></span>
+            </div>
+            <div class="site-card__pic">
+              <img class="site-card__pic-img" src="gl-forte.png" width="" height="" alt="Forte">
+            </div>
+            <div class="site-card-active">
+              <h2 class="site-card-active__title">Sunset</h2>
+              <p class="site-card-active__text">
+                Интернет-магазин с личным кабинетом
+              </p>
+              <a class="btn btn_site-card-active" href="#">10000 р.</a>   
+            </div>
+          </article>
+        </a>
+        <div class="pagination">
+          <a class="btn-pagination btn-pagination_active" href="#">1</a>
+          <a class="btn-pagination" href="#">2</a>
+          <a class="btn-pagination" href="#">3</a>
+          <a class="btn-pagination btn-pagination_text" href="#">1</a>
+        </div>
+      </section>
+      <section class="yandex-map" id="map">
+        <div class="address-block">
+          <h3 class="address-block__title">NЁRDS DESIGN STUDIO</h3>
+          <p class="address-block__text">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p class="address-block__text">
+            тел. +7 (812) 275-75-75
+          </p>
+          <a class="btn btn_address-block" href="#">НАПИШИТЕ НАМ</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-main">
+      <div class="container">
+        <section class="footer-main__social">
+          <div class="social-icons">
+            <a class="social-icons__link social-icons__link_vk" href="#">Вконтакте</a>
+            <a class="social-icons__link social-icons__link_fb" href="#">Фейсбук</a>
+            <a class="social-icons__link social-icons__link_tw" href="#">Твитер</a>
+          </div>
+          <div class="social-desc">
+            <b class="social-desc__title">Давайте дружить, это выгодно!</b>
+            <p class="social-desc__text">
+              Скидка 10% для друзей из социальных сетей.
+            </p>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+<script src="js/script.min.js"></script>
+</body>
+</html>
