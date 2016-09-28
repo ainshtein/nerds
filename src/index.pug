@@ -1,0 +1,131 @@
+doctype html
+html(lang="ru")
+head
+  meta(charset="utf-8")
+  title NЁRDS DESIGN STUDIO
+  meta(http-equiv="X-UA-Compatible" content="IE=edge")
+  meta(name="keywords" content="разные, ключевые, слова")
+  meta(name="description" content="краткое описание сайта")
+  meta(name="author" content="ainshtein")
+  link(rel="stylesheet" href="css/main.css")
+  script(defer src="js/script.min.js")
+body
+  header.header-main
+    div.container
+      div.header-main__top
+        div.logo
+          img.logo__image(src="img/logo.png" width="139" height="56" alt="Логотип")
+        nav.menu
+          ul.menu__list
+            li.menu__item
+              a.menu__link.menu__link_active Студия
+            li.menu__item
+              a.menu__link(href="#") Клиенты
+            li.menu__item
+              a.menu__link(href="catalog.html") Магазин
+            li.menu__item
+              a.menu__link(href="#") Контакты
+        div.user-block
+          a.user-block__link(href="#") Корзина
+      div.slider
+        div.slider__wrapper
+          input.slider__input(type="radio" name="toggle" id="toggle-1" checked)
+          input.slider__input(type="radio" name="toggle" id="toggle-2")
+          input.slider__input(type="radio" name="toggle" id="toggle-3")
+          div.slider__controls
+            label.slider__control(for="toggle-1")
+            label.slider__control(for="toggle-2")
+            label.slider__control(for="toggle-3")
+          div.slide.slide_first
+            div.slide__content
+              div.slide__title Долго, дорого, скрупулезно.
+              p.slide__text Математически выверенный дизайн для вашего сайта или мобильного
+              a.btn.btn_red.btn_big(href="#") Узнать больше
+          div.slide.slide_second
+            div.slide__content
+              div.slide__title Любите ли вы математику,как любим ее мы?
+              p.slide__text Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать
+              a.btn.btn_red.btn_big(href="#") Узнать больше
+          div.slide.slide_third
+            div.slide__content
+              div.slide__title Только наркотики, только хардкор!
+              p.slide__text Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов
+              a.btn.btn_red.btn_big(href="#") Узнать больше
+            //- span.slider__control.slider__controtive 1
+            //- span.slider__control 2
+            //- span.slider__control 3
+  main.container
+    section.services
+      h2.nvisible Услуги
+      div.service
+        img.service__image(src="img/serv-sites.jpg" width="240" height="124" alt="Веб-сайты")
+        h3.service__title Веб-сайты
+        p.service__text Мир никогда не будет прежним после того как увидит ваш сайт!
+        a.btn.btn_red(href="#") Заказать
+      div.service
+        img.service__image(src="img/serv-apps.jpg" width="240" height="124" alt="Приложения")
+        h3.service__title Приложения
+        p.service__text Покорите топ-10 приложений в AppStrore и Google Play
+        a.btn.btn_green(href="#") Заказать
+      div.service
+        img.service__image(src="img/serv-presentations.jpg" width="240" height="124" alt="Презентации")
+        h3.service__title Презентации
+        p.service__text Вы даже не подозреваете, насколько вы изумительны!
+        a.btn.btn_yellow(href="#") Заказать
+    div.about
+      div.about__left
+        h1.about__title Мы — маленькая, но гордая дизайн-студия из Краснодара
+        p.about__text Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
+        h2.about__list-title Выполняем заказы на разработку:
+        ul.about__list
+          li.about__item
+            span.about__text Веб-сайтов любой сложности
+          li.about__item
+            span.about__text Мобильных приложений для iOS и Android
+          li.about__item
+            span.about__text Слайдшоу и видео для корпоративных презентаций
+      div.about__right
+        div.about__logo
+          img.about__logo-image(src="img/about-logo.png" width="240" height="119" alt="Нёрдс с 2004г")
+        h2.about__list-title Как мы работаем:
+        ul.about__list
+          li.about__item
+            span.about__text С самоотдачей 146%
+          li.about__item
+            span.about__text Соблюдая сроки на 100%
+          li.about__item
+            span.about__text По предоплате 50%
+    section.projects
+      h2.nvisible Проекты
+      a.project(href="#")
+        img.project__picture(src="img/pro-glukhanko.png" width="198" height="37" alt="Glukhanko")
+      a.project(href="#")
+        img.project__picture(src="img/pro-htmlacademy.png" width="199" height="68" alt="Htmlacademy")
+      a.project(href="#")
+        img.project__picture(src="img/pro-borodinski.png" width="209" height="90" alt="Borodinski")
+  footer.footer-main
+    div.map
+      div.map__container#map Интерактивная карта
+      div.address
+        h2.address__title Nёrds design studio
+        p.address__text 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        p.address__text тел. +7 (812) 275-75-75
+        a.btn.btn_red(href="#") Напишите нам
+    div.container
+      div.footer-main__bottom
+        div.footer-main__social
+          a.social-link.social-link_vk(href="#") Вконтакте
+          a.social-link.social-link_fb(href="#") Фейсбук
+          a.social-link.social-link_tw(href="#") Твитер
+        div.footer-main__content
+          h2.footer-main__title Давайте дружить, это выгодно!
+          p.footer-main__text Скидка 10% для друзей из социальных сетей.
+
+
+
+
+
+
+
+
+

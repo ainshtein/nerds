@@ -1,0 +1,30 @@
+@mixin box-shadow($params){
+	box-shadow: $params;
+	-webkit-box-shadow: $params;
+	-moz-box-shadow: $params;
+}
+
+@mixin transition($params){
+	transition: $params;
+	-webkit-transition: $params;
+	-o-transition: $params;
+	-moz-transition: $params;
+}
+
+@mixin color($bg, $color: red) {
+	background: $bg;
+	color: $color;
+}
+
+%clearfix {
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin inlineblock($valign: top) {
+	display: inline-block;
+	vertical-align: $valign;
+}

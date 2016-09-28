@@ -1,0 +1,215 @@
+.header-main {
+  background-color: $color-header;
+}
+.header-main__top {
+  @extend %clearfix;
+  max-height: 436px - 310px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+.logo {
+  float: left;
+  width: 160px;
+  text-decoration: none;
+  margin-right: 60px;
+}
+.menu {
+  float: left;
+  width: 500px;
+}
+.menu__list {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.menu__item {
+  @include inlineblock;
+  list-style-type: none;
+  margin-right: 45px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+}
+.menu__link {
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: 30px;
+  text-transform: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+
+    &:hover {
+      color: #fb565a;
+    }
+     &:active {
+      color: inherit;
+      opacity: 0.4;
+    }
+}
+.menu__link_active {
+  border-bottom: 2px solid #fb565a;
+}
+.user-block {
+  float: right;
+  width: 100px;
+  text-align: right;
+}
+.user-block__link {
+  position: relative;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: 30px;
+  text-transform: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-position: -5px -5px;
+    background-image: url("../../img/sprite.png");
+  }
+
+  &:hover {
+      color: #fb565a;
+      &:hover::before {
+        background-position: -55px -5px;
+      }
+    }
+
+  &:active {
+    color: inherit;
+    opacity: 0.4;
+    }
+    &:active::before {
+      background-position: -55px -5px;
+    }
+}
+.slider {
+  position: relative;
+  width: 880px;
+  height: 310px;
+  margin: 0 auto;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slider__input {
+  display: none;
+}
+.slider__controls {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  width: 200px;
+  height: 10px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 1000;
+  font-size: 0;
+}
+.slider__control {
+  @include inlineblock;
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+  background-color: #ffffff;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#toggle-1:checked ~ .slider__controls .slider__control[for="toggle-1"],
+#toggle-2:checked ~ .slider__controls .slider__control[for="toggle-2"],
+#toggle-3:checked ~ .slider__controls .slider__control[for="toggle-3"] {
+  background-color: #c1c1c1;
+}
+.slide__content {
+  width: 380px;
+  padding: 30px 0;
+}
+.slide__title {
+  color: inherit;
+  font-family: inherit;
+  font-size: 36px;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: 36px;
+}
+.slide__text {
+  color: #283136;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: 22px;
+}
+.btn {
+  @include inlineblock;
+  color: #000000;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 2px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 7px;
+  padding-bottom: 13px;
+  transition: all 0.3s;
+}
+.btn_red {
+  color: #ffffff;
+  background-color: $btn_red;
+
+  &:hover {
+    background-color: $btn_red-hover;
+  }
+  &:active {
+    background-color: $btn_red-down;
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+.btn_big {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.slide_first {
+  background: url("../../img/bg-slide1.png") 100% 10px no-repeat;
+  display: none;
+}
+.slide_second {
+  background: url("../../img/bg-slide2.png") 100% 10px no-repeat;
+  display: none;
+}
+.slide_third {
+  background: url("../../img/bg-slide3.png") 100% -10px no-repeat;
+  display: none;
+}
+#toggle-1:checked ~ .slide_first,
+#toggle-2:checked ~ .slide_second,
+#toggle-3:checked ~ .slide_third {
+  display: block;
+}
+

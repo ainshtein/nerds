@@ -1,0 +1,23 @@
+// ----- vars ----- //
+$color-header:  #eeeeee;
+$btn_red: #fb565a;
+$btn_red-hover: #d6494d;
+$btn_red-down: #b63538;
+$btn_green: #00ca74;
+$btn_green-hover: #01a25e;
+$btn_green-down: #009053;
+$btn_yellow: #efc84a;
+$btn_yellow-hover: #d6ae2c;
+$btn_yellow-down: #c09b24;
+
+
+// ----- layout ----- //
+@import "_misc/mixins";
+@import "../../bower_components/normalize-css/normalize";
+@import "_misc/fonts";
+@import "_misc/adjustment";
+
+// ----- styles ----- //
+@import "partials/header";
+@import "partials/main-index";
+@import "partials/footer";

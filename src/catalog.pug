@@ -1,0 +1,165 @@
+doctype html
+html(lang="ru")
+head
+  meta(charset="utf-8")
+  title NЁRDS DESIGN STUDIO
+  meta(http-equiv="X-UA-Compatible" content="IE=edge")
+  meta(name="keywords" content="разные, ключевые, слова")
+  meta(name="description" content="краткое описание сайта")
+  meta(name="author" content="ainshtein")
+  link(rel="stylesheet" href="css/main.css")
+  script(defer src="js/script.min.js")
+body
+  header.header-main
+    div.container
+      div.header-main__top
+        a.logo(href="index.html")
+          img.logo__image(src="img/logo.png" width="139" height="56" alt="Логотип")
+        nav.menu
+          ul.menu__list
+            li.menu__item
+              a.menu__link(href="index.html") Студия
+            li.menu__item
+              a.menu__link(href="#") Клиенты
+            li.menu__item
+              a.menu__link.menu__link_active Магазин
+            li.menu__item
+              a.menu__link(href="#") Контакты
+        div.user-block
+          a.user-block__link(href="#") Корзина
+        h1.header-main__title Добро пожаловать в магазин готовых макетов
+  main.container.catalog
+    aside.catalog__filter
+      div.filter
+        form(action="https://echo.htmlacademy.ru" method="post")
+          fieldset.filter__group
+            legend.filter__title Стоимость
+            div.range
+              div.range__control
+                div.range__scale
+                  div.range__bar Шкала
+                div.range__toggle.range__toggle_min Переключатель минимум
+                div.range__toggle.range__toggle_max Переключатель максимум
+              div.range__fields
+                label.range__label(for="price-min-field") от
+                input.range__input(type="text" name="price-min" id="price-min-field" value="0" maxlength="9")
+                label.range__label(for="price-max-field") до
+                input.range__input(type="text" name="price-max" id="price-max-field" value="15000" maxlength="9")
+          fieldset.filter__group
+            legend.filter__title Сетка:
+            input.filter__radio(type="radio" name="grid" id="grid-adaptive-field" value="grid-adaptive" checked)
+            label.filter__label(for="grid-adaptive-field") Адаптивная
+            input.filter__radio(type="radio" name="grid" id="grid-fix-field" value="grid-fix")
+            label.filter__label(for="grid-fix-field") Фиксированная
+            input.filter__radio(type="radio" name="grid" id="grid-gum-field" value="grid-gum")
+            label.filter__labe(for="grid-gum-field") Резиновая
+          fieldset.filter__group
+            legend.filter__title Особенности:
+            input.filter__checkbox(type="checkbox" name="slider" id="slider-field" checked)
+            label.filter__label(for="slider-field") Слайдер
+            input.filter__checkbox(type="checkbox" name="advantages" id="advantages-field")
+            label.filter__label(for="advantages-field") Блок преимуществ
+            input.filter__checkbox(type="checkbox" name="news" id="news-field" checked)
+            label.filter__label(for="news-field") Новости
+            input.filter__checkbox(type="checkbox" name="galery" id="galery-field")
+            label.filter__label(for="galery-field") Галерея
+            input.filter__checkbox(type="checkbox" name="busket" id="busket-field")
+            label.filter__label(for="busket-field") Корзина
+            button.btn.btn_submit(type="submit") Показать
+    div.catalog__wrapper
+      div.catalog__sorting
+        ul.sorting
+          li.sorting__item Сортировать
+          li.sorting__item
+            a.sorting__link(href="#") По цене
+          li.sorting__item
+            a.sorting__link(href="#") По типу
+          li.sorting__item
+            a.sorting__link(href="#") По функционалу
+          li.sorting__item
+            a.sorting__link.sorting__link_active(href="#") сортировать по убыванию
+            a.sorting__link(href="#") сортировать по возрастанию
+      div.catalog__content
+        div.card
+          div.card__decoration
+            span Элемент декорации
+          div.card__picture
+            img.card__image(src="cat-aviator.jpg" width="240" height="240" alt="Aviator")
+          div.card__content
+            h2.card__title Sunset
+            p.card__text Интернет-магазин с личным кабинетом
+            a.btn.btn_red(href="#") 10000 р.
+        div.card
+          div.card__decoration
+            span Элемент декорации
+          div.card__picture
+            img.card__image(src="cat-sunset.jpg" width="240" height="240" alt="Sunset")
+          div.card__content
+            h2.card__title Sunset
+            p.card__text Интернет-магазин с личным кабинетом
+            a.btn.btn_red(href="#") 10000 р.
+        div.card
+          div.card__decoration
+            span Элемент декорации
+          div.card__picture
+            img.card__image(src="cat-forte.jpg" width="240" height="240" alt="Forte")
+          div.card__content
+            h2.card__title Sunset
+            p.card__text Интернет-магазин с личным кабинетом
+            a.btn.btn_red(href="#") 10000 р.
+        div.card
+          div.card__decoration
+            span Элемент декорации
+          div.card__picture
+            img.card__image(src="cat-marquee.jpg" width="240" height="240" alt="Marquee")
+          div.card__content
+            h2.card__title Sunset
+            p.card__text Интернет-магазин с личным кабинетом
+            a.btn.btn_red(href="#") 10000 р.
+        div.card
+          div.card__decoration
+            span Элемент декорации
+          div.card__picture
+            img.card__image(src="cat-avenue.jpg" width="240" height="240" alt="Avenue")
+          div.card__content
+            h2.card__title Sunset
+            p.card__text Интернет-магазин с личным кабинетом
+            a.btn.btn_red(href="#") 10000 р.
+        div.card
+          div.card__decoration
+            span Элемент декорации
+          div.card__picture
+            img.card__image(src="cat-dovetail.jpg" width="240" height="240" alt="Dovetail")
+          div.card__content
+            h2.card__title Sunset
+            p.card__text Интернет-магазин с личным кабинетом
+            a.btn.btn_red(href="#") 10000 р.
+      ul.pagination
+        li.pagination__item
+          a.pagination__link.pagination__link_active 1
+        li.pagination__item
+          a.pagination__link 2
+        li.pagination__item
+          a.pagination__link 3
+        li.pagination__item
+          a.pagination__link Следующая
+  footer.footer-main
+    div.map
+      div.map__container#map Интерактивная карта
+      div.address
+        h2.address__title Nёrds design studio
+        p.address__text 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        p.address__text тел. +7 (812) 275-75-75
+        a.btn.btn_red(href="#") Напишите нам
+    div.container
+      div.footer-main__bottom
+        div.footer-main__social
+          a.social-link.social-link_vk(href="#") Вконтакте
+          a.social-link.social-link_fb(href="#") Фейсбук
+          a.social-link.social-link_tw(href="#") Твитер
+        div.footer-main__content
+          h2.footer-main__title Давайте дружить, это выгодно!
+          p.footer-main__text Скидка 10% для друзей из социальных сетей.
+
+
+

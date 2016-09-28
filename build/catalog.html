@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="utf-8">
+  <title>NЁRDS DESIGN STUDIO</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="разные, ключевые, слова">
+  <meta name="description" content="краткое описание сайта">
+  <meta name="author" content="ainshtein">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/script.min.js"></script>
+</head>
+<body>
+  <header class="header-main">
+    <div class="container">
+      <div class="header-main__top"><a class="logo" href="index.html"><img class="logo__image" src="img/logo.png" width="139" height="56" alt="Логотип"></a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="index.html">Студия</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Клиенты</a></li>
+            <li class="menu__item"><a class="menu__link menu__link_active">Магазин</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user-block"><a class="user-block__link" href="#">Корзина</a></div>
+        <h1 class="header-main__title">Добро пожаловать в магазин готовых макетов</h1>
+      </div>
+    </div>
+  </header>
+  <main class="container catalog">
+    <aside class="catalog__filter">
+      <div class="filter">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter__group">
+            <legend class="filter__title">Стоимость</legend>
+            <div class="range">
+              <div class="range__control">
+                <div class="range__scale">
+                  <div class="range__bar">Шкала</div>
+                </div>
+                <div class="range__toggle range__toggle_min">Переключатель минимум</div>
+                <div class="range__toggle range__toggle_max">Переключатель максимум</div>
+              </div>
+              <div class="range__fields">
+                <label class="range__label" for="price-min-field">от</label>
+                <input class="range__input" type="text" name="price-min" id="price-min-field" value="0" maxlength="9">
+                <label class="range__label" for="price-max-field">до</label>
+                <input class="range__input" type="text" name="price-max" id="price-max-field" value="15000" maxlength="9">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="filter__group">
+            <legend class="filter__title">Сетка:</legend>
+            <input class="filter__radio" type="radio" name="grid" id="grid-adaptive-field" value="grid-adaptive" checked>
+            <label class="filter__label" for="grid-adaptive-field">Адаптивная</label>
+            <input class="filter__radio" type="radio" name="grid" id="grid-fix-field" value="grid-fix">
+            <label class="filter__label" for="grid-fix-field">Фиксированная</label>
+            <input class="filter__radio" type="radio" name="grid" id="grid-gum-field" value="grid-gum">
+            <label class="filter__labe" for="grid-gum-field">Резиновая</label>
+          </fieldset>
+          <fieldset class="filter__group">
+            <legend class="filter__title">Особенности:</legend>
+            <input class="filter__checkbox" type="checkbox" name="slider" id="slider-field" checked>
+            <label class="filter__label" for="slider-field">Слайдер</label>
+            <input class="filter__checkbox" type="checkbox" name="advantages" id="advantages-field">
+            <label class="filter__label" for="advantages-field">Блок преимуществ</label>
+            <input class="filter__checkbox" type="checkbox" name="news" id="news-field" checked>
+            <label class="filter__label" for="news-field">Новости</label>
+            <input class="filter__checkbox" type="checkbox" name="galery" id="galery-field">
+            <label class="filter__label" for="galery-field">Галерея</label>
+            <input class="filter__checkbox" type="checkbox" name="busket" id="busket-field">
+            <label class="filter__label" for="busket-field">Корзина</label>
+            <button class="btn btn_submit" type="submit">Показать</button>
+          </fieldset>
+        </form>
+      </div>
+    </aside>
+    <div class="catalog__wrapper">
+      <div class="catalog__sorting">
+        <ul class="sorting">
+          <li class="sorting__item">Сортировать</li>
+          <li class="sorting__item"><a class="sorting__link" href="#">По цене</a></li>
+          <li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
+          <li class="sorting__item"><a class="sorting__link" href="#">По функционалу</a></li>
+          <li class="sorting__item"><a class="sorting__link sorting__link_active" href="#">сортировать по убыванию</a><a class="sorting__link" href="#">сортировать по возрастанию</a></li>
+        </ul>
+      </div>
+      <div class="catalog__content">
+        <div class="card">
+          <div class="card__decoration"><span>Элемент декорации</span></div>
+          <div class="card__picture"><img class="card__image" src="cat-aviator.jpg" width="240" height="240" alt="Aviator"></div>
+          <div class="card__content">
+            <h2 class="card__title">Sunset</h2>
+            <p class="card__text">Интернет-магазин с личным кабинетом</p><a class="btn btn_red" href="#">10000 р.</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__decoration"><span>Элемент декорации</span></div>
+          <div class="card__picture"><img class="card__image" src="cat-sunset.jpg" width="240" height="240" alt="Sunset"></div>
+          <div class="card__content">
+            <h2 class="card__title">Sunset</h2>
+            <p class="card__text">Интернет-магазин с личным кабинетом</p><a class="btn btn_red" href="#">10000 р.</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__decoration"><span>Элемент декорации</span></div>
+          <div class="card__picture"><img class="card__image" src="cat-forte.jpg" width="240" height="240" alt="Forte"></div>
+          <div class="card__content">
+            <h2 class="card__title">Sunset</h2>
+            <p class="card__text">Интернет-магазин с личным кабинетом</p><a class="btn btn_red" href="#">10000 р.</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__decoration"><span>Элемент декорации</span></div>
+          <div class="card__picture"><img class="card__image" src="cat-marquee.jpg" width="240" height="240" alt="Marquee"></div>
+          <div class="card__content">
+            <h2 class="card__title">Sunset</h2>
+            <p class="card__text">Интернет-магазин с личным кабинетом</p><a class="btn btn_red" href="#">10000 р.</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__decoration"><span>Элемент декорации</span></div>
+          <div class="card__picture"><img class="card__image" src="cat-avenue.jpg" width="240" height="240" alt="Avenue"></div>
+          <div class="card__content">
+            <h2 class="card__title">Sunset</h2>
+            <p class="card__text">Интернет-магазин с личным кабинетом</p><a class="btn btn_red" href="#">10000 р.</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__decoration"><span>Элемент декорации</span></div>
+          <div class="card__picture"><img class="card__image" src="cat-dovetail.jpg" width="240" height="240" alt="Dovetail"></div>
+          <div class="card__content">
+            <h2 class="card__title">Sunset</h2>
+            <p class="card__text">Интернет-магазин с личным кабинетом</p><a class="btn btn_red" href="#">10000 р.</a>
+          </div>
+        </div>
+      </div>
+      <ul class="pagination">
+        <li class="pagination__item"><a class="pagination__link pagination__link_active">1</a></li>
+        <li class="pagination__item"><a class="pagination__link">2</a></li>
+        <li class="pagination__item"><a class="pagination__link">3</a></li>
+        <li class="pagination__item"><a class="pagination__link">Следующая</a></li>
+      </ul>
+    </div>
+  </main>
+  <footer class="footer-main">
+    <div class="map">
+      <div class="map__container" id="map">Интерактивная карта</div>
+      <div class="address">
+        <h2 class="address__title">Nёrds design studio</h2>
+        <p class="address__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="address__text">тел. +7 (812) 275-75-75</p><a class="btn btn_red" href="#">Напишите нам</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-main__bottom">
+        <div class="footer-main__social"><a class="social-link social-link_vk" href="#">Вконтакте</a><a class="social-link social-link_fb" href="#">Фейсбук</a><a class="social-link social-link_tw" href="#">Твитер</a></div>
+        <div class="footer-main__content">
+          <h2 class="footer-main__title">Давайте дружить, это выгодно!</h2>
+          <p class="footer-main__text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
