@@ -13,6 +13,11 @@
   text-decoration: none;
   margin-right: 60px;
 }
+.logo__image {
+  height: 56px;
+  width: 139px;
+  margin: 0;
+}
 .menu {
   float: left;
   width: 500px;
@@ -20,11 +25,15 @@
 .menu__list {
   padding: 0;
   margin: 0;
+  list-style-type: none;
+  font-size: 0;
   text-align: right;
 }
 .menu__item {
   @include inlineblock;
-  list-style-type: none;
+  font: inherit;
+  font-size: 14px;
+  line-height: 30px;
   margin-right: 45px;
 
     &:last-child {
@@ -33,15 +42,9 @@
 }
 .menu__link {
   color: inherit;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: inherit;
-  font-style: inherit;
-  line-height: 30px;
-  text-transform: inherit;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: color 0.3s;
 
     &:hover {
       color: #fb565a;
@@ -57,17 +60,14 @@
 .user-block {
   float: right;
   width: 100px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 30px;
   text-align: right;
 }
 .user-block__link {
   position: relative;
   color: inherit;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: inherit;
-  font-style: inherit;
-  line-height: 30px;
-  text-transform: inherit;
   text-decoration: none;
   cursor: pointer;
   padding-left: 30px;
@@ -130,7 +130,8 @@
   @include inlineblock;
   width: 10px;
   height: 10px;
-  margin: 0 3px;
+  margin-left: 3px;
+  margin-right: 3px;
   background-color: #ffffff;
   border: 3px solid white;
   border-radius: 50%;
@@ -144,31 +145,27 @@
 }
 .slide__content {
   width: 380px;
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .slide__title {
-  color: inherit;
-  font-family: inherit;
+  font: inherit;
   font-size: 36px;
-  font-weight: inherit;
-  font-style: inherit;
   line-height: 36px;
+  color: inherit;
+
 }
 .slide__text {
   color: #283136;
-  font-family: inherit;
+  font: inherit;
   font-size: 16px;
-  font-weight: inherit;
-  font-style: inherit;
   line-height: 22px;
 }
 .btn {
   @include inlineblock;
   color: #000000;
-  font-family: inherit;
+  font: inherit;
   font-size: 12px;
-  font-weight: inherit;
-  font-style: inherit;
   line-height: 18px;
   text-decoration: none;
   cursor: pointer;
@@ -177,7 +174,7 @@
   padding-right: 40px;
   padding-top: 7px;
   padding-bottom: 13px;
-  transition: all 0.3s;
+  transition: background-color 0.3s;
 }
 .btn_red {
   color: #ffffff;

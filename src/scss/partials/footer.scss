@@ -5,10 +5,8 @@
   text-align: center;
 }
 .map__container {
-  font-family: inherit;
+  font: inherit;
   font-size: 76px;
-  font-weight: inherit;
-  font-style: inherit;
   line-height: 82px;
   padding-top: 10px;
 }
@@ -27,19 +25,14 @@
   background-color: #ffffff;
 }
 .address__title {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: inherit;
+  font: inherit;
   line-height: 30px;
+  margin-top: 0;
 }
 .address__text {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  text-transform: none;
+  font: inherit;
   line-height: 20px;
+  text-transform: none;
   color: #666666;
 }
 .address .btn {
@@ -55,6 +48,7 @@
 .footer-main__social {
   float: left;
   width: 240px;
+  font-size: 0;
   text-align: center;
 }
 .social-link {
@@ -62,12 +56,11 @@
   @include inlineblock;
   height: 61px;
   width: 61px;
-  font-size: 0;
   text-decoration: none;
   background-color: #e1e1e1;
   border-radius: 50%;
   margin-right: 28px;
-  transition: all 0.3s;
+  transition: background-color 0.3s;
 
     &:nth-child(3n+3) {
       margin-right: 0;
@@ -105,64 +98,39 @@
   width: 21px;
   height: 21px;
   background-position: -172px -5px;
-
 }
 .footer-main__content {
   float: left;
   width: 550px;
   margin-left: 50px;
-
 }
 .footer-main__title {
-  font-family: inherit;
+  font: inherit;
   font-size: 36px;
-  font-weight: inherit;
-  font-style: inherit;
-  text-transform: none;
   line-height: 36px;
+  text-transform: none;
   margin: 0;
   margin-bottom: 12px;
 }
 .footer-main__text {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  text-transform: none;
+  font: inherit;
   line-height: 22px;
+  text-transform: none;
   margin: 0;
 }
 
 // SPRITE CSS
 
-.sprite--icon-basket {
-    width: 15px;
-    height: 15px;
-    background-position: -5px -5px;
-}
+// .sprite--icon-check-off {
+//     width: 23px;
+//     height: 23px;
+//     background-position: -80px -5px;
+// }
 
-.sprite--icon-basket-down {
-    width: 15px;
-    height: 15px;
-    background-position: -30px -5px;
-}
-
-.sprite--icon-basket-hov {
-    width: 15px;
-    height: 15px;
-    background-position: -55px -5px;
-}
-
-.sprite--icon-check-off {
-    width: 23px;
-    height: 23px;
-    background-position: -80px -5px;
-}
-
-.sprite--icon-check-on {
-    width: 27px;
-    height: 23px;
-    background-position: -113px -5px;
-}
+// .sprite--icon-check-on {
+//     width: 27px;
+//     height: 23px;
+//     background-position: -113px -5px;
+// }
 
 
