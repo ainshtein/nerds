@@ -16,12 +16,13 @@
   left: 50%;
   height: 240px;
   width: 250px;
+  text-align: left;
   margin-top: -120px;
   margin-left: -438px;
-  padding-top: 30px;
+  padding-top: 24px;
   padding-bottom: 21px;
-  padding-left: 23px;
-  padding-right: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #ffffff;
 }
 .address__title {
@@ -38,10 +39,11 @@
 .address .btn {
   display: block;
   width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 .footer-main__bottom {
   @extend %clearfix;
-  min-height: 216px;
   padding-top: 75px;
   padding-bottom: 75px;
 }
@@ -102,7 +104,7 @@
 .footer-main__content {
   float: left;
   width: 550px;
-  margin-left: 50px;
+  margin-left: 80px;
 }
 .footer-main__title {
   font: inherit;
