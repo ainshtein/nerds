@@ -1,0 +1,68 @@
+.catalog {
+  @extend %clearfix;
+}
+.catalog__filter {
+  float: left;
+  width: 240px;
+}
+.filter__group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.filter__title {
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+}
+.range {
+
+}
+.range__control {
+
+}
+.range__scale {
+
+}
+.range__bar {
+
+}
+.range__toggle {
+
+}
+.range__toggle_min {
+
+}
+.range__toggle_max {
+
+}
+.range__fields {
+
+}
+.range__label {
+
+}
+.range__input {
+
+}
+
+.filter__radio {
+
+}
+.filter__label {
+  font: inherit;
+  color: #283136;
+  font-size: 16px;
+  line-height: 20px;
+}
+.catalog__wrapper {
+  float: right;
+  width: 560px;
+}
+.filter__checkbox {
+
+}
+.btn_submit {
+  text-transform: inherit;
+  background-color: #f1f1f1;
+}
