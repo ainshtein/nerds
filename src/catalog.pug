@@ -160,6 +160,21 @@ html(lang="ru")
           div.footer-main__content
             h2.footer-main__title Давайте дружить, это выгодно!
             p.footer-main__text Скидка 10% для друзей из социальных сетей.
+    div.modal-content
+      button.modal-content__close(type="button" title="Закрыть") Закрыть
+      form.modal-content__form(action="https://echo.htmlacademy.ru" method="post")
+        div.modal-content__top
+          div.modal-content__left
+            label.modal-content__label(for="name-field") Ваше имя:
+            input.modal-content__input(type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста" maxlength="50" require)
+          div.modal-content__right
+            label.modal-content__label(for="email-field") Ваш e-mail:
+            input.modal-content__input(type="email" name="email" id="email-field" placeholder="Для отправки ответа" maxlength="30" require)
+        label.modal-content__label(for="email-text-field") Текст письма:
+        textarea.modal-content__input.modal-content__input_email-text(rows="10" cols="45" name="email-text" id="email-text-field" placeholder="В свободной форме" maxlength="300" require)
+        //- input.modal-content__input.modal-content__input_email-text(type="text" name="email-text" id="email-text-field" placeholder="В свободной форме" maxlength="300" require)
+        button.btn.btn_red(type="submit") Отправить
+    div.modal-overlay
 
 
 

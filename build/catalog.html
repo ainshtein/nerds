@@ -164,5 +164,24 @@
         </div>
       </div>
     </footer>
+    <div class="modal-content">
+      <button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
+      <form class="modal-content__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-content__top">
+          <div class="modal-content__left">
+            <label class="modal-content__label" for="name-field">Ваше имя:</label>
+            <input class="modal-content__input" type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста" maxlength="50" require>
+          </div>
+          <div class="modal-content__right">
+            <label class="modal-content__label" for="email-field">Ваш e-mail:</label>
+            <input class="modal-content__input" type="email" name="email" id="email-field" placeholder="Для отправки ответа" maxlength="30" require>
+          </div>
+        </div>
+        <label class="modal-content__label" for="email-text-field">Текст письма:</label>
+        <textarea class="modal-content__input modal-content__input_email-text" rows="10" cols="45" name="email-text" id="email-text-field" placeholder="В свободной форме" maxlength="300" require></textarea>
+        <button class="btn btn_red" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
   </body>
 </html>
