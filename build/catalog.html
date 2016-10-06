@@ -42,23 +42,25 @@
                   <div class="range__toggle range__toggle_max">Переключатель максимум</div>
                 </div>
                 <div class="range__fields">
-                  <label class="range__label" for="price-min-field">от</label>
-                  <input class="range__input" type="text" name="price-min" id="price-min-field" value="0" maxlength="9">
-                  <label class="range__label" for="price-max-field">до</label>
-                  <input class="range__input" type="text" name="price-max" id="price-max-field" value="15000" maxlength="9">
+                  <label class="range__label range__label_left" for="price-min-field">от
+                    <input class="range__input" type="text" name="price-min" id="price-min-field" value="0" maxlength="9">
+                  </label>
+                  <label class="range__label range__label_right" for="price-max-field">до
+                    <input class="range__input" type="text" name="price-max" id="price-max-field" value="15000" maxlength="9">
+                  </label>
                 </div>
               </div>
             </fieldset>
-            <fieldset class="filter__group">
+            <fieldset class="filter__group grid">
               <legend class="filter__title">Сетка:</legend>
               <input class="filter__radio" type="radio" name="grid" id="grid-adaptive-field" value="grid-adaptive" checked>
               <label class="filter__label" for="grid-adaptive-field">Адаптивная</label>
-              <input class="filter__radio" type="radio" name="grid" id="grid-fix-field" value="grid-fix">
+              <input class="filter__radio" type="radio" name="grid" id="grid-fix-field" value="grid-fix" disabled>
               <label class="filter__label" for="grid-fix-field">Фиксированная</label>
               <input class="filter__radio" type="radio" name="grid" id="grid-gum-field" value="grid-gum">
-              <label class="filter__labe" for="grid-gum-field">Резиновая</label>
+              <label class="filter__label" for="grid-gum-field">Резиновая</label>
             </fieldset>
-            <fieldset class="filter__group">
+            <fieldset class="filter__group features">
               <legend class="filter__title">Особенности:</legend>
               <input class="filter__checkbox" type="checkbox" name="slider" id="slider-field" checked>
               <label class="filter__label" for="slider-field">Слайдер</label>
@@ -68,27 +70,35 @@
               <label class="filter__label" for="news-field">Новости</label>
               <input class="filter__checkbox" type="checkbox" name="galery" id="galery-field">
               <label class="filter__label" for="galery-field">Галерея</label>
-              <input class="filter__checkbox" type="checkbox" name="busket" id="busket-field">
+              <input class="filter__checkbox" type="checkbox" name="busket" id="busket-field" disabled>
               <label class="filter__label" for="busket-field">Корзина</label>
-              <button class="btn btn_submit" type="submit">Показать</button>
             </fieldset>
+            <button class="btn btn_submit" type="submit">Показать</button>
           </form>
         </div>
       </aside>
       <div class="catalog__wrapper">
         <div class="catalog__sorting">
           <ul class="sorting">
-            <li class="sorting__item">Сортировать</li>
+            <li class="sorting__item">Сортировать:</li>
             <li class="sorting__item"><a class="sorting__link" href="#">По цене</a></li>
             <li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
             <li class="sorting__item"><a class="sorting__link" href="#">По функционалу</a></li>
-            <li class="sorting__item"><a class="sorting__link sorting__link_active" href="#">сортировать по убыванию</a><a class="sorting__link" href="#">сортировать по возрастанию</a></li>
+            <li class="sorting__item"><a class="sorting__link-down sorting__link_active" href="#">сортировать по убыванию</a><a class="sorting__link-up" href="#">сортировать по возрастанию</a></li>
           </ul>
         </div>
         <div class="catalog__content">
           <div class="card">
             <div class="card__decoration"><span>Элемент декорации</span></div>
-            <div class="card__picture"><img class="card__image" src="cat-aviator.jpg" width="240" height="240" alt="Aviator"></div>
+            <div class="card__picture"><img class="card__image" src="img/cat-aviator.jpg" width="240" height="240" alt="Aviator"></div>
+            <div class="card__content">
+              <h2 class="card__title">AVIATOR</h2>
+              <p class="card__text">Одностраничный макет с авторским дизайном</p><a class="btn btn_red" href="#">8000 р.</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__decoration"><span>Элемент декорации</span></div>
+            <div class="card__picture"><img class="card__image" src="img/cat-sunset.jpg" width="240" height="240" alt="Sunset"></div>
             <div class="card__content">
               <h2 class="card__title">Sunset</h2>
               <p class="card__text">Интернет-магазин с личным кабинетом</p><a class="btn btn_red" href="#">10000 р.</a>
@@ -96,50 +106,42 @@
           </div>
           <div class="card">
             <div class="card__decoration"><span>Элемент декорации</span></div>
-            <div class="card__picture"><img class="card__image" src="cat-sunset.jpg" width="240" height="240" alt="Sunset"></div>
+            <div class="card__picture"><img class="card__image" src="img/cat-forte.jpg" width="240" height="240" alt="Forte"></div>
             <div class="card__content">
-              <h2 class="card__title">Sunset</h2>
-              <p class="card__text">Интернет-магазин с личным кабинетом</p><a class="btn btn_red" href="#">10000 р.</a>
+              <h2 class="card__title">FORTE</h2>
+              <p class="card__text">Отличный макет для личного блога</p><a class="btn btn_red" href="#">5000 р.</a>
             </div>
           </div>
           <div class="card">
             <div class="card__decoration"><span>Элемент декорации</span></div>
-            <div class="card__picture"><img class="card__image" src="cat-forte.jpg" width="240" height="240" alt="Forte"></div>
+            <div class="card__picture"><img class="card__image" src="img/cat-marquee.jpg" width="240" height="240" alt="Modern Organic THAI"></div>
             <div class="card__content">
-              <h2 class="card__title">Sunset</h2>
-              <p class="card__text">Интернет-магазин с личным кабинетом</p><a class="btn btn_red" href="#">10000 р.</a>
+              <h2 class="card__title">Modern Organic THAI</h2>
+              <p class="card__text">Сайт для ресторана быстрого питания</p><a class="btn btn_red" href="#">12000 р.</a>
             </div>
           </div>
           <div class="card">
             <div class="card__decoration"><span>Элемент декорации</span></div>
-            <div class="card__picture"><img class="card__image" src="cat-marquee.jpg" width="240" height="240" alt="Marquee"></div>
+            <div class="card__picture"><img class="card__image" src="img/cat-avenue.jpg" width="240" height="240" alt="Avenue"></div>
             <div class="card__content">
-              <h2 class="card__title">Sunset</h2>
-              <p class="card__text">Интернет-магазин с личным кабинетом</p><a class="btn btn_red" href="#">10000 р.</a>
+              <h2 class="card__title">AVENUE</h2>
+              <p class="card__text">Макет для блога о путешествиях</p><a class="btn btn_red" href="#">8000 р.</a>
             </div>
           </div>
           <div class="card">
             <div class="card__decoration"><span>Элемент декорации</span></div>
-            <div class="card__picture"><img class="card__image" src="cat-avenue.jpg" width="240" height="240" alt="Avenue"></div>
+            <div class="card__picture"><img class="card__image" src="img/cat-dovetail.jpg" width="240" height="240" alt="Dovetail"></div>
             <div class="card__content">
-              <h2 class="card__title">Sunset</h2>
-              <p class="card__text">Интернет-магазин с личным кабинетом</p><a class="btn btn_red" href="#">10000 р.</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__decoration"><span>Элемент декорации</span></div>
-            <div class="card__picture"><img class="card__image" src="cat-dovetail.jpg" width="240" height="240" alt="Dovetail"></div>
-            <div class="card__content">
-              <h2 class="card__title">Sunset</h2>
-              <p class="card__text">Интернет-магазин с личным кабинетом</p><a class="btn btn_red" href="#">10000 р.</a>
+              <h2 class="card__title">DOVETAIL</h2>
+              <p class="card__text">Интернет-магазин с галереей товаров</p><a class="btn btn_red" href="#">14000 р.</a>
             </div>
           </div>
         </div>
         <ul class="pagination">
-          <li class="pagination__item"><a class="pagination__link pagination__link_active">1</a></li>
+          <li class="pagination__item"><a class="pagination__link pagination__link_current">1</a></li>
           <li class="pagination__item"><a class="pagination__link">2</a></li>
           <li class="pagination__item"><a class="pagination__link">3</a></li>
-          <li class="pagination__item"><a class="pagination__link">Следующая</a></li>
+          <li class="pagination__item"><a class="pagination__link pagination__link_last">Следующая</a></li>
         </ul>
       </div>
     </main>

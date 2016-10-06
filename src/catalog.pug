@@ -41,19 +41,19 @@ html(lang="ru")
                   div.range__toggle.range__toggle_min Переключатель минимум
                   div.range__toggle.range__toggle_max Переключатель максимум
                 div.range__fields
-                  label.range__label(for="price-min-field") от
-                  input.range__input(type="text" name="price-min" id="price-min-field" value="0" maxlength="9")
-                  label.range__label(for="price-max-field") до
-                  input.range__input(type="text" name="price-max" id="price-max-field" value="15000" maxlength="9")
-            fieldset.filter__group
+                  label.range__label.range__label_left(for="price-min-field") от
+                    input.range__input(type="text" name="price-min" id="price-min-field" value="0" maxlength="9")
+                  label.range__label.range__label_right(for="price-max-field") до
+                    input.range__input(type="text" name="price-max" id="price-max-field" value="15000" maxlength="9")
+            fieldset.filter__group.grid
               legend.filter__title Сетка:
               input.filter__radio(type="radio" name="grid" id="grid-adaptive-field" value="grid-adaptive" checked)
               label.filter__label(for="grid-adaptive-field") Адаптивная
-              input.filter__radio(type="radio" name="grid" id="grid-fix-field" value="grid-fix")
+              input.filter__radio(type="radio" name="grid" id="grid-fix-field" value="grid-fix" disabled)
               label.filter__label(for="grid-fix-field") Фиксированная
               input.filter__radio(type="radio" name="grid" id="grid-gum-field" value="grid-gum")
-              label.filter__labe(for="grid-gum-field") Резиновая
-            fieldset.filter__group
+              label.filter__label(for="grid-gum-field") Резиновая
+            fieldset.filter__group.features
               legend.filter__title Особенности:
               input.filter__checkbox(type="checkbox" name="slider" id="slider-field" checked)
               label.filter__label(for="slider-field") Слайдер
@@ -63,13 +63,13 @@ html(lang="ru")
               label.filter__label(for="news-field") Новости
               input.filter__checkbox(type="checkbox" name="galery" id="galery-field")
               label.filter__label(for="galery-field") Галерея
-              input.filter__checkbox(type="checkbox" name="busket" id="busket-field")
+              input.filter__checkbox(type="checkbox" name="busket" id="busket-field" disabled)
               label.filter__label(for="busket-field") Корзина
-              button.btn.btn_submit(type="submit") Показать
+            button.btn.btn_submit(type="submit") Показать
       div.catalog__wrapper
         div.catalog__sorting
           ul.sorting
-            li.sorting__item Сортировать
+            li.sorting__item Сортировать:
             li.sorting__item
               a.sorting__link(href="#") По цене
             li.sorting__item
@@ -77,14 +77,23 @@ html(lang="ru")
             li.sorting__item
               a.sorting__link(href="#") По функционалу
             li.sorting__item
-              a.sorting__link.sorting__link_active(href="#") сортировать по убыванию
-              a.sorting__link(href="#") сортировать по возрастанию
+              a.sorting__link-down.sorting__link_active(href="#") сортировать по убыванию
+              a.sorting__link-up(href="#") сортировать по возрастанию
         div.catalog__content
           div.card
             div.card__decoration
               span Элемент декорации
             div.card__picture
-              img.card__image(src="cat-aviator.jpg" width="240" height="240" alt="Aviator")
+              img.card__image(src="img/cat-aviator.jpg" width="240" height="240" alt="Aviator")
+            div.card__content
+              h2.card__title AVIATOR
+              p.card__text Одностраничный макет с авторским дизайном
+              a.btn.btn_red(href="#") 8000 р.
+          div.card
+            div.card__decoration
+              span Элемент декорации
+            div.card__picture
+              img.card__image(src="img/cat-sunset.jpg" width="240" height="240" alt="Sunset")
             div.card__content
               h2.card__title Sunset
               p.card__text Интернет-магазин с личным кабинетом
@@ -93,56 +102,47 @@ html(lang="ru")
             div.card__decoration
               span Элемент декорации
             div.card__picture
-              img.card__image(src="cat-sunset.jpg" width="240" height="240" alt="Sunset")
+              img.card__image(src="img/cat-forte.jpg" width="240" height="240" alt="Forte")
             div.card__content
-              h2.card__title Sunset
-              p.card__text Интернет-магазин с личным кабинетом
-              a.btn.btn_red(href="#") 10000 р.
+              h2.card__title FORTE
+              p.card__text Отличный макет для личного блога
+              a.btn.btn_red(href="#") 5000 р.
           div.card
             div.card__decoration
               span Элемент декорации
             div.card__picture
-              img.card__image(src="cat-forte.jpg" width="240" height="240" alt="Forte")
+              img.card__image(src="img/cat-marquee.jpg" width="240" height="240" alt="Modern Organic THAI")
             div.card__content
-              h2.card__title Sunset
-              p.card__text Интернет-магазин с личным кабинетом
-              a.btn.btn_red(href="#") 10000 р.
+              h2.card__title Modern Organic THAI
+              p.card__text Сайт для ресторана быстрого питания
+              a.btn.btn_red(href="#") 12000 р.
           div.card
             div.card__decoration
               span Элемент декорации
             div.card__picture
-              img.card__image(src="cat-marquee.jpg" width="240" height="240" alt="Marquee")
+              img.card__image(src="img/cat-avenue.jpg" width="240" height="240" alt="Avenue")
             div.card__content
-              h2.card__title Sunset
-              p.card__text Интернет-магазин с личным кабинетом
-              a.btn.btn_red(href="#") 10000 р.
+              h2.card__title AVENUE
+              p.card__text Макет для блога о путешествиях
+              a.btn.btn_red(href="#") 8000 р.
           div.card
             div.card__decoration
               span Элемент декорации
             div.card__picture
-              img.card__image(src="cat-avenue.jpg" width="240" height="240" alt="Avenue")
+              img.card__image(src="img/cat-dovetail.jpg" width="240" height="240" alt="Dovetail")
             div.card__content
-              h2.card__title Sunset
-              p.card__text Интернет-магазин с личным кабинетом
-              a.btn.btn_red(href="#") 10000 р.
-          div.card
-            div.card__decoration
-              span Элемент декорации
-            div.card__picture
-              img.card__image(src="cat-dovetail.jpg" width="240" height="240" alt="Dovetail")
-            div.card__content
-              h2.card__title Sunset
-              p.card__text Интернет-магазин с личным кабинетом
-              a.btn.btn_red(href="#") 10000 р.
+              h2.card__title DOVETAIL
+              p.card__text Интернет-магазин с галереей товаров
+              a.btn.btn_red(href="#") 14000 р.
         ul.pagination
           li.pagination__item
-            a.pagination__link.pagination__link_active 1
+            a.pagination__link.pagination__link_current 1
           li.pagination__item
             a.pagination__link 2
           li.pagination__item
             a.pagination__link 3
           li.pagination__item
-            a.pagination__link Следующая
+            a.pagination__link.pagination__link_last Следующая
     footer.footer-main
       div.map
         div.map__container#map Интерактивная карта
