@@ -8,7 +8,8 @@
     <meta name="description" content="краткое описание сайта">
     <meta name="author" content="ainshtein">
     <link rel="stylesheet" href="css/main.css">
-    <script defer src="js/script.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script defer src="js/main.js"></script>
   </head>
   <body>
     <header class="header-main">
@@ -98,11 +99,11 @@
     </main>
     <footer class="footer-main">
       <div class="map">
-        <div class="map__container" id="map">Интерактивная карта</div>
+        <div class="map__container" id="map"></div>
         <div class="address">
           <h2 class="address__title">Nёrds design studio</h2>
           <p class="address__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p class="address__text">тел. +7 (812) 275-75-75</p><a class="btn btn_red" href="#">Напишите нам</a>
+          <p class="address__text">тел. +7 (812) 275-75-75</p><a class="btn btn_red" href="#" id="writeToUs">Напишите нам</a>
         </div>
       </div>
       <div class="container">
@@ -120,16 +121,16 @@
       <form class="modal-content__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-content__top">
           <div class="modal-content__left">
-            <label class="modal-content__label" for="name-field">Ваше имя:</label>
-            <input class="modal-content__input" type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста" maxlength="50" require>
+            <label class="modal-content__label" for="user-name-field">Ваше имя:</label>
+            <input class="modal-content__input" type="text" name="user-name" id="user-name-field" placeholder="Представьтесь, пожалуйста" maxlength="50">
           </div>
           <div class="modal-content__right">
-            <label class="modal-content__label" for="email-field">Ваш e-mail:</label>
-            <input class="modal-content__input" type="email" name="email" id="email-field" placeholder="Для отправки ответа" maxlength="30" require>
+            <label class="modal-content__label" for="user-email-field">Ваш e-mail:</label>
+            <input class="modal-content__input" type="email" name="user-email" id="user-email-field" placeholder="Для отправки ответа" maxlength="30">
           </div>
         </div>
         <label class="modal-content__label" for="email-text-field">Текст письма:</label>
-        <textarea class="modal-content__input modal-content__input_email-text" rows="10" cols="45" name="email-text" id="email-text-field" placeholder="В свободной форме" maxlength="300" require></textarea>
+        <textarea class="modal-content__input modal-content__input_email-text" rows="10" cols="45" name="email-text" id="email-text-field" placeholder="В свободной форме" maxlength="300"></textarea>
         <button class="btn btn_red" type="submit">Отправить</button>
       </form>
     </div>

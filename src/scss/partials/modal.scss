@@ -13,6 +13,25 @@
   background-color: #ffffff;
   color: #000000;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  display: none;
+}
+@keyframes bounce {
+    0% {transform: translateY(-2000px);}
+    70% {transform: translateY(30px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+.modal-content__show {
+  display: block;
+  animation: bounce 0.6s;
+}
+@keyframes shake {
+    0%, 100%                {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80%      {transform: translateX(10px);}
+}
+.modal-error {
+    animation: shake 0.6s;
 }
 .modal-content__close {
   position: absolute;
@@ -24,7 +43,7 @@
   outline: none;
   cursor: pointer;
   font-size: 0;
-  background-color: #fb565a;
+  background-color: $btn_red;
   border-radius: 50%;
 
     &::before,
@@ -44,6 +63,15 @@
 
     &::after {
       transform: rotate(-45deg);
+    }
+
+    &:hover {
+      background-color: $btn_red-hover;
+    }
+
+    &:active {
+      background-color: $btn_red-down;
+      box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
     }
 }
 .modal-content__top {
@@ -65,6 +93,7 @@
   color: inherit;
   margin: 0;
   margin-bottom: 13px;
+  cursor: pointer;
 }
 .modal-content__input {
   height: 38px;
@@ -100,6 +129,7 @@
   margin-bottom: 48px;
 }
 .modal-content__form .btn {
+  text-transform: inherit;
   width: 100%;
 }
 .modal-overlay {
@@ -110,4 +140,8 @@
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modal-overlay__show {
+  display: block;
 }

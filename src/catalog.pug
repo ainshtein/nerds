@@ -8,7 +8,8 @@ html(lang="ru")
     meta(name="description" content="краткое описание сайта")
     meta(name="author" content="ainshtein")
     link(rel="stylesheet" href="css/main.css")
-    script(defer src="js/script.min.js")
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(defer src="js/main.js")
   body
     header.header-main
       div.container
@@ -145,12 +146,12 @@ html(lang="ru")
             a.pagination__link.pagination__link_last Следующая
     footer.footer-main
       div.map
-        div.map__container#map Интерактивная карта
+        div.map__container#map
         div.address
           h2.address__title Nёrds design studio
           p.address__text 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           p.address__text тел. +7 (812) 275-75-75
-          a.btn.btn_red(href="#") Напишите нам
+          a.btn.btn_red(href="#" id="writeToUs") Напишите нам
       div.container
         div.footer-main__bottom
           div.footer-main__social
@@ -165,13 +166,13 @@ html(lang="ru")
       form.modal-content__form(action="https://echo.htmlacademy.ru" method="post")
         div.modal-content__top
           div.modal-content__left
-            label.modal-content__label(for="name-field") Ваше имя:
-            input.modal-content__input(type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста" maxlength="50" require)
+            label.modal-content__label(for="user-name-field") Ваше имя:
+            input.modal-content__input(type="text" name="user-name" id="user-name-field" placeholder="Представьтесь, пожалуйста" maxlength="50")
           div.modal-content__right
-            label.modal-content__label(for="email-field") Ваш e-mail:
-            input.modal-content__input(type="email" name="email" id="email-field" placeholder="Для отправки ответа" maxlength="30" require)
+            label.modal-content__label(for="user-email-field") Ваш e-mail:
+            input.modal-content__input(type="email" name="user-email" id="user-email-field" placeholder="Для отправки ответа" maxlength="30")
         label.modal-content__label(for="email-text-field") Текст письма:
-        textarea.modal-content__input.modal-content__input_email-text(rows="10" cols="45" name="email-text" id="email-text-field" placeholder="В свободной форме" maxlength="300" require)
+        textarea.modal-content__input.modal-content__input_email-text(rows="10" cols="45" name="email-text" id="email-text-field" placeholder="В свободной форме" maxlength="300")
         //- input.modal-content__input.modal-content__input_email-text(type="text" name="email-text" id="email-text-field" placeholder="В свободной форме" maxlength="300" require)
         button.btn.btn_red(type="submit") Отправить
     div.modal-overlay
