@@ -2,7 +2,6 @@ node_modules/
 bower_components/
 psd/
 *.json
-*.js
 .idea
 *.sublime*
 *.log
