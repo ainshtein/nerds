@@ -14,18 +14,34 @@ link.addEventListener("click", function(event) {
   event.preventDefault();
   overlay.classList.add("modal-overlay__show");
   popup.classList.add("modal-content__show");
-  if(storageName) {
+  if(storageName && storageEmail) {
     userName.value = storageName;
-    userEmail.focus();
+    userEmail.value = storageEmail;
+    userText.focus();
+  } else if(storageName || storageEmail) {
+    if(storageName) {
+      userName.value = storageName;
+      userEmail.focus();
+    }
+    if(storageEmail) {
+      userEmail.value = storageEmail;
+      userName.focus();
+    }
   } else {
     userName.focus();
   };
-  if(storageEmail) {
-    userEmail.value = storageEmail;
-    userText.focus();
-  } else {
-    userEmail.focus();
-  };
+  // if(storageName) {
+  //   userName.value = storageName;
+  //   userEmail.focus();
+  // } else {
+  //   userName.focus();
+  // };
+  // if(storageEmail) {
+  //   userEmail.value = storageEmail;
+  //   userText.focus();
+  // } else {
+  //   userEmail.focus();
+  // };
 });
 
 close.addEventListener("click", function(event) {
