@@ -384,7 +384,7 @@
 }
 .card__content {
   position: absolute;
-  left: 20px;
+  top: 50px;
   bottom: 20px;
   left: 20px;
   right: 20px;
@@ -401,6 +401,8 @@
   font: inherit;
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 .card__text {
   font: inherit;
@@ -408,11 +410,14 @@
   line-height: 18px;
   color: #283136;
   text-transform: none;
+  margin-bottom: 28px;
 }
 .card__content .btn{
   width: 100%;
   font-size: 18px;
   line-height: 9px;
+  padding-top: 14px;
+  padding-bottom: 15px;
   padding-left: 35px;
   padding-right: 35px;
 }
